@@ -1,52 +1,160 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <img src="/w3images/avatar_g2.jpg" style="width:45%;" class="w3-round"><br><br>
+    <h4><b>PORTFOLIO</b></h4>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#portfolio" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal"><i class="fa fa-th-large fa-fw w3-margin-right"></i>PORTFOLIO</a> 
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button w3-padding"><i class="fa fa-user fa-fw w3-margin-right"></i>ABOUT</a> 
+  </div>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="portfolio">
+    <a href="#"><img src="/w3images/avatar_g2.jpg" style="width:65px;" class="w3-circle w3-right w3-margin w3-hide-large w3-hover-opacity"></a>
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>My Portfolio</b></h1>
+    <div class="w3-section w3-bottombar w3-padding-16">
+    </div>
+    </div>
+  </header>
+  
+  <div class="w3-container w3-padding-large" style="margin-bottom:10px">
+    <h3><b>Human Computer Interaction:</b></h3>
+    <h4><b>Design Manifesto</b></h4>
+    <h5>Design is not just what it looks like and feels like. Design is how it works. -Steve Jobs</h5>
+    <p>   Throughout my term taking Human Computer Interaction, I have been trying to figure out my personal design philosophy. In the beginning, my focus was to make everything as simple and clutter free as possible. Many of my favorite websites pull off the sterile look and remove all unnecessary clutter. However, I quickly became bored with this philosophy. I realized that humans by nature generally like some sort of complexity. There’s a reason why the majority of the human race doesn't live in a cave surviving on the bare minimum by choice. We like a bit of complexity and luxury in our lives. Humans can get bored very quick, so I think its important for us to have enough complexity in our lives to keep us busy, but not so much as to distract us. I think this statement defines my design philosophy well.</p>
+    <p>
+   I mentioned that I was obsessed with simplicity and cutting out clutter in the beginning of the course, and so, my first group design project (Design for Others) reflects those virtues. As part of this assignment, we were tasked with redesigning a local website to cater to a more corporate demographic. When coming up with a new design for the Technocopia website(hyperlink), we spent a lot of time discussing what would be important information for a corporate audience to see and how we wanted to implement this information. First, we picked a very clean and simple design language. We used shades of white, muted blues, and gold to create a professional and appealing aesthetic. Our new homepage was cleaner and provided the logo, vital information, and a sign up button to the viewer instantly. Beneath this, there was sneak peek to some of the projects Technocopia is involved with. We decided that these were the most important pieces of information for corporate groups, and so we included them, and nothing more. We optimized the menu bar to prioritize tabs that would be more useful to corporate groups and used spacing to highlight things we wanted the user to select. Through multiple peer evaluations, we learned that our website did indeed convey a business sense; however, many thought it was a bit too simple and, as a result, a bit boring.</p>
+   <p> 
+  With this feedback in mind, I approached the next assignment (Design for Understanding) a bit differently. For design for understanding, my group decided that we would tackle the subject of drug use and frequency throughout different ages. We created two styles of graphs to achieve two different goals. The first was for clear communication, and the second was for persuasive communication. For clear communication, my group decided that we should use overlaid line graphs in order to effectively view and compare the data on different drugs. Our system made it easy to read the raw data and interpret it relative to other drugs.                       For persuasive communication, we decided to focus on teenager drug use because we felt that it was much easier to persuade our audience when dealing with the effects of drugs on young people. In order to represent usage, we decided to take the ratio of those affected buy drugs at a certain age group, and represent them as a stick figure pictogram. For frequency, we used bar graphs that were decorated to represent what drug they pertained to. None of these graphs showed particularly precise information; instead, they take raw data and manipulate it to evict some sort of emotion from the viewer. Overall, feedback was very good. However, some mentioned that a few aspects of the graphs were too complex and should have been dialed down in order to be more effective. So I went from too simple to too complex. </p>
+  <p>
+  For our next project (Design for Tension),we were tasked with creating a chatbot to help a user with a difficult situation. My team decided to create a bot that would help a user decide on whether or not they should buy something that they want. We conducted a few user tests during this project, and they were especially helpful in making our bot as conversational as it was. From the beginning, I was insistent that we design a bot that does not restrict what the user can say and allows full freedom. As a result, our bot was much more conversational than the other bots in the class that provided button responses for the user to choose from. It was much more open ended and it didn’t feel like there was a set amount of programed responses. All of today’s best conversational interfaces operate this way, for good reason. This was the first project that I felt had a good balance between simplicity and complexity.
+</p>
+<p>
+  Next up was Design for Wellbeing. My team ended up incorporating a flappy bird clone into a site and used the Affectiva library to read user emotions and adapt the screen as the user’s emotions changed. I originally got this idea from watching my roommates play Fortnite late at night. I noticed that they experience a variety of emotions while playing and many times, they experienced times of frustration that just gets worse as they continue to play. In order to promote their wellbeing, we design a site that would encourage a user to take a break when they get frustrated by a game. After all, many of us use video games as a way to relax when we are frustrated with something else, so it is nonsensical to let video games frustrate us even more. Our site will also read other emotions and make encouraging comments based on them. Our design straightforward and everything was arranged in a way that made sense and promoted wellbeing. Overall, our feedback supported our ideas about wellbeing, and this is a project that I am particularly proud of. 
+</p>
+<p>
+  My last experience designing in HCI was Design for Another World. In this project, we explored what it would be like to transport to an alternate environment. We conducted user surveys to help figure out how we would like to go about this project, but for this particular assignment, they were not particularly helpful. In the end, we designed a 360 degree photo viewer that was designed to help people with a phobia of heights overcome their fears. We designed a very simple and user friendly interface that made it easy for the user to progress to a new height when they felt ready for a change. Our feedback was very positive, and many commented on how they really liked our user interface. It was easy to understand with minimal background and it was very intuitive. 
+  Throughout my projects in this class, I think it is very easy to see my design philosophy present in each and every assignment. The evolution that I have undergone is dramatic, and it has made me a better computer scientist in general. I look forward to using these new skills in the future and I am very thankful for the opportunity.
+</p>
+  </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:10px">
+ <h4><b>Projects</b></h4>
+    </div>  
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://i.imgur.com/eGnJk8O.jpg" alt="Stairs" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Good and Bad Design</b></p>
+        <p>For some reason, I have found that acknowledging good design is significantly harder than acknowledging bad design. Read more about <a href="https://medium.com/@drhombus24/how-common-is-good-design-e78265b4f5f">Good Design</a> and <a href="https://medium.com/@drhombus24/bad-design-surrounds-us-4876ec015de3">Bad design</a> here.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://i.imgur.com/oLsexX9.jpg" alt="Technocopia" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Design for Others</b></p>
+        <p>Throughout this design process we had one general idea. Change a site that is clearly targeted at artisans and individuals, and integrate it seamlessly into the corporate world. Read more <a href="https://medium.com/@dowdtd16/design-for-others-team-4-d82d38351c26">here</a>.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://cdn-images-1.medium.com/max/800/0*5XMWvTQHtGcHBz2c." alt="Usage" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Design for Understanding</b></p>
+        <p>We took raw data and visualized it to clearly communicate the information and to highlight the impact of the data in a persuasive way. <a href="https://medium.com/@john3r8amaral/design-for-understanding-8c2c1d0eab">Read more.</a></p>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://i.imgur.com/IdqgKX8.png" alt="Moneybot" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Design for Tension</b></p>
+        <p>The objective of the Design For Tension project was to tackle a small element of a problem through the use of a chatbot. We decided to tackle financial decision making. <a href="https://medium.com/@john3r8amaral/design-for-tension-8081059ed3e5">Read more.</a></p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="https://i.imgur.com/y4etUf1.png" alt="Flappy Bird" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Design for Wellbeing</b></p>
+        <p>Most video games are by nature made to support our wellbeing. However, sometimes these games can serve to detract from our wellbeing and leave us more frustrated and angry than we were before.<a href="https://medium.com/@john3r8amaral/design-for-wellbeing-80d63f00e32a">Read more.</a>< </p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="https://i.imgur.com/clqbMwn.png" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Design for Another World</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+<div class="w3-section w3-bottombar w3-padding-16">
+    </div>
+
+  <!-- Images of Me -->
+  <div class="w3-row-padding w3-padding-16" id="about">
+    <div class="w3-col m6">
+      <img src="https://i.imgur.com/peNF4O6.jpg" alt="Me" style="width:100%">
+    </div>
+
+  <div class="w3-container w3-padding-large" style="margin-bottom:32px">
+    <h4><b>About Me</b></h4>
+    <p>I'm just an aspiring robotics engineer making his way through life. There's not much more to it</p>
+    <hr>
     
-    <meta charset="utf-8">
-    <title>Cursor Handler - A-Frame School</title>
-    <meta name="description" content="Cursor Handler - A-Frame School">
-    <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
-    <script>
-      var scene = 0;
-      AFRAME.registerComponent('handle-events', {
-        init: function () {
-          var el = this.el;  // <a-box>
-          el.setAttribute('scale', {x: .1, y: .1, z: .1});
-          var x = 0;
-          el.addEventListener('mouseenter', function () {
-            el.setAttribute('color', '#24CAFF');  
-          });
-          el.addEventListener('mouseleave', function () {
-            el.setAttribute('color', '#EF2D5E');  
-          });
-          el.addEventListener('click', function () {
-           if(x == 0){
-            el.setAttribute('scale', {x: .2, y: .1, z: .2});
-            x = 1;
-            scene++;
-          }
-          else {
-            el.setAttribute('scale', {x: .1, y: .1, z: .1});
-            x = 0;
-          }
-          });
-        } 
-      });
-      
-      
-      
-    </script>
-  </head>
-  <body>
-     <a-scene>
-        <a-box color="#EF2D5E" position="0 0 0" handle-events></a-box>
-      <a-camera><a-cursor></a-cursor></a-camera>
+
+  
     
-      <a-sky src="https://i.imgur.com/8sT4sM1.jpg" rotation="0 -130 0" handle-sky></a-sky>
-    <!-- <a-sky src="https://i.imgur.com/iCCgdHc.jpg" rotation="0 -130 0"></a-sky> -->
-    <!-- <a-sky src="https://i.imgur.com/p9UfXpf.jpg" rotation="0 -130 0"></a-sky>-->
-      <a-text font="kelsonsans" value="HELLOOOO" width="6" position="-2.5 0.25 -1.5"
-              rotation="0 15 0"></a-text>
-    </a-scene>
-  </body>
+  </div>
+  </footer>
+  
+  <div class="w3-black w3-center w3-padding-24">  <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"> </a></div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
 </html>
+
